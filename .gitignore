@@ -1,0 +1,16 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# IDE / Notebooks
+.ipynb_checkpoints/
+.DS_Store
+
+# Pytest / Cache
+.pytest_cache/
+.ruff_cache/
+
+# Dataset and outputs (Data is kept local, never committed to Git)
+data/
+!data/**/.gitkeep

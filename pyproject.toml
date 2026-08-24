@@ -1,0 +1,34 @@
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "brain-tumor-detection"
+version = "0.1.0"
+description = "Computer Vision & Semi-Supervised Learning for brain tumor detection"
+authors = [
+    {name = "Asma Aliouche"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "scikit-learn>=1.2.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "pillow>=9.5.0",
+    "opencv-python>=4.7.0",
+    "ipykernel>=6.20.0"
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.15.0"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
